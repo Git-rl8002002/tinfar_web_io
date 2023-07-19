@@ -1,0 +1,14 @@
+<table class="table table-hover table-striped table-bordered">
+    {% for val in msg %}    
+    <tr>
+        <td id="{{ val[3] }}" onclick="detail_calendar_record(id)">
+            <button class="btn btn-secondary">{{ val[0] }}</button>&nbsp;
+            <span class="text-primary">
+                {{ val[1] }}
+            </span>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+  

@@ -1,0 +1,19 @@
+<table class="table table-hover table-striped table-bordered">
+    {% for val in msg %}    
+    <tr>
+        <td  id="{{ val[5] }}" onclick="detail_work_record(id)">
+            <button class="btn btn-secondary">
+                {{ val[0] }}
+            </button>&nbsp;
+            <span>
+                {{ val[1] }} -
+            </span>&nbsp;
+            <span class="text-primary">
+                {{ val[2] }}
+            </span>
+        </td>
+    </tr>
+    {% endfor %}
+</table>    
+
+  

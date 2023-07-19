@@ -1,0 +1,21 @@
+<table class="table table-hover table-striped table-bordered">
+        {% for val in msg %}
+        <tr>
+                <td>
+                        <div class="btn-group">
+                                <button class="btn btn-danger"  id="{{ val[6] }}" onclick="del_menu_car_record(id)"><i class="bi bi-x-square"></i> 刪</button>
+                                <button class="btn btn-secondary">{{ val[0] }}</button>
+                        </div>
+                        <div>
+                                出車 {{ val[1] }} KM , 入庫 {{ val[2] }} KM , 共 {{ val[3] }} KM , 車子 {{ val[4] }}
+                        </div>
+                        <div class="text-primary">
+                                {{ val[5] }}
+                        </div>
+                </td>
+        </tr>
+        {% endfor %}   
+</table>  
+
+
+   
